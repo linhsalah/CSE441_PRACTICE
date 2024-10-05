@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center_vertical"
+    android:background="?attr/selectableItemBackground"> <!-- Hiệu ứng chọn item -->
+
+    <!-- Hình ảnh quốc kỳ -->
+    <ImageView
+        android:id="@+id/flagImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEtextnd="16dp"
+        android:scaleType="centerCrop" />
+
+    <!-- Phần text hiển thị tên quốc gia và thủ đô -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Tên quốc gia -->
+        <TextView
+            android:id="@+id/countryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="India" />
+
+        <!-- Tên thủ đô -->
+        <TextView
+            android:id="@+id/capitalName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#FF6200EE"
+            android:text="New Delhi" />
+    </LinearLayout>
+
+</LinearLayout>
